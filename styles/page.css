@@ -1,0 +1,526 @@
+#welcome {
+  padding-top: 0; }
+  @media screen and (max-width: 600px) {
+    #welcome {
+      margin-top: 0; } }
+
+#logomotion {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("images/welcome.gif");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center; }
+  @media screen and (max-width: 1440px) {
+    #logomotion {
+      background-size: auto 104%; } }
+  @media screen and (max-width: 991px) {
+    #logomotion {
+      background-size: auto 100%; } }
+
+#money-note .boy_hug, #money-note .girl_lie, #money-note .graphic-money {
+  position: absolute; }
+
+#money-note .boy_hug {
+  right: 3vw;
+  bottom: 8vh;
+  z-index: 9; }
+  #money-note .boy_hug::before {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 110px;
+    background-image: url("images/circle-bg.svg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: -1;
+    bottom: -80px;
+    left: 20px; }
+
+#money-note .girl_lie {
+  width: 12.5vw;
+  bottom: 12vh;
+  left: 48vw;
+  -webkit-transform: rotate(3deg);
+          transform: rotate(3deg); }
+
+#money-note .graphic-money {
+  width: 80px;
+  height: 80px;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+  top: 40vh;
+  left: 8vw; }
+
+@media screen and (max-width: 1680px) {
+  #money-note .boy_hug {
+    bottom: 10vh; } }
+
+@media screen and (min-width: 1200px) and (max-width: 1440px) {
+  #money-note .graphic-money {
+    left: 20px; }
+  #money-note .girl_lie {
+    width: 15vw; } }
+
+@media screen and (max-width: 1199px) {
+  #money-note .boy_hug, #money-note .graphic-money {
+    display: none; }
+  #money-note .girl_lie {
+    width: 220px;
+    left: auto;
+    right: 20px;
+    bottom: -8vh; } }
+
+@media screen and (max-width: 600px) {
+  #money-note .girl_lie {
+    display: none; }
+  #money-note .boy_hug {
+    display: inline-block;
+    width: 46vw;
+    right: 15px;
+    bottom: -228px; }
+    #money-note .boy_hug img {
+      -webkit-transform: rotate(20deg);
+              transform: rotate(20deg); }
+    #money-note .boy_hug::before {
+      width: 92%;
+      left: 11px; } }
+
+#login .page-inner {
+  min-height: 100vh;
+  background-image: url("images/background3.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom -2vh center;
+  position: relative; }
+  #login .page-inner .text {
+    text-align: center;
+    padding-top: 24vh;
+    position: relative;
+    z-index: 50; }
+    #login .page-inner .text .title {
+      font-size: 50px;
+      color: #E46E47;
+      margin-bottom: 30px; }
+    #login .page-inner .text p {
+      font-size: 20px;
+      color: #303030; }
+    #login .page-inner .text .btn {
+      height: 50px;
+      border-radius: 50px;
+      border-color: #00B900;
+      -webkit-box-shadow: 0 0 0 0;
+              box-shadow: 0 0 0 0;
+      color: #00B900;
+      margin-top: 40px; }
+    #login .page-inner .text .icon {
+      font-size: 24px;
+      margin-right: 4px; }
+
+#login .graphic-right, #login .graphic-left {
+  position: absolute;
+  z-index: -1; }
+
+#login .graphic-right {
+  width: 16vw;
+  right: 8vw;
+  top: 22vh; }
+
+#login .graphic-left {
+  width: 16vw;
+  left: 8vw;
+  top: 24vh; }
+
+#login .boy-note {
+  width: 62vw;
+  height: 40vh;
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+  right: 0; }
+  #login .boy-note .boy {
+    width: 20vw;
+    right: 10vw;
+    z-index: 10;
+    min-width: 200px; }
+  #login .boy-note .note {
+    width: 100%;
+    bottom: -5px;
+    right: 0; }
+
+#login .stack-coins {
+  width: 18vw;
+  position: absolute;
+  left: 8vw;
+  bottom: 4vh; }
+
+@media screen and (max-width: 1440px) {
+  #login .page-inner .text .title {
+    font-size: 45px; } }
+
+@media screen and (max-width: 991px) {
+  #login .page-inner .text {
+    width: 80%;
+    margin: 0 auto; }
+    #login .page-inner .text .title {
+      font-size: 36px; } }
+
+@media screen and (min-width: 992px) {
+  #login .page-inner .text .btn:hover {
+    background-color: #00B900;
+    color: #FFF; } }
+
+@media screen and (min-width: 768px) {
+  #terms + #footer {
+    height: 21vh;
+    position: relative;
+    background-position: top;
+    padding-bottom: 30px;
+    margin-top: 0; } }
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  #terms + #footer {
+    height: 10vh;
+    background-image: none;
+    background-color: #FFC856;
+    margin-top: 100px; } }
+
+#terms {
+  height: auto;
+  min-height: 100vh;
+  color: #222222;
+  padding-bottom: 100px; }
+  #terms .inner {
+    max-width: 1200px;
+    margin: 0 auto 0; }
+  @media screen and (min-width: 768px) {
+    #terms .boy-draw {
+      bottom: auto !important; }
+      #terms .boy-draw::before {
+        bottom: -60px; }
+    #terms .girl-money {
+      display: none; }
+    #terms .graphic-money {
+      position: fixed;
+      bottom: 30vh;
+      left: 6vw; } }
+  @media screen and (max-width: 600px) {
+    #terms .boy-draw {
+      bottom: -21vh; } }
+
+#profile .profile-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  #profile .profile-head .pic {
+    background-color: #ccc;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px; }
+    #profile .profile-head .pic img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover; }
+
+#profile .right {
+  background: #ffd95b;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffd95b), to(#ff5637));
+  background: linear-gradient(180deg, #ffd95b 0%, #ff5637 100%);
+  color: #FFF; }
+  #profile .right .text {
+    height: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-size: 70% auto;
+    background-position: center;
+    background-image: url("images/money-group2.png");
+    background-repeat: no-repeat; }
+
+#profile .left .text > .title {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #E46E47; }
+
+#profile .left .label .icon {
+  color: #E46E47; }
+
+#profile form {
+  margin: 20px 0; }
+
+#profile .btn-row {
+  text-align: center; }
+  #profile .btn-row .btn {
+    margin: 0 20px;
+    width: 140px; }
+
+@media screen and (min-width: 992px) {
+  #profile .left {
+    width: calc(100vw - 34vw);
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 10vh;
+    float: left; }
+    #profile .left .text {
+      width: 60%; }
+  #profile .right {
+    width: 34vw;
+    height: 100vh;
+    float: right;
+    position: relative;
+    overflow: hidden; }
+    #profile .right .text {
+      background-size: 84% auto;
+      background-position: top 80% center;
+      height: 60vh;
+      padding: 80px 20px;
+      text-align: center; }
+      #profile .right .text .title {
+        font-size: 50px;
+        margin: 20px 0; }
+  #profile .graphic {
+    position: absolute;
+    bottom: -11vw; }
+  #profile .profile-head .pic {
+    width: 100px;
+    height: 100px; } }
+
+@media screen and (max-width: 991px) {
+  #profile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    #profile .graphic {
+      display: none; }
+    #profile .left {
+      -webkit-box-flex: 2;
+          -ms-flex-positive: 2;
+              flex-grow: 2;
+      padding: 20px 30px; }
+    #profile .right {
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1; } }
+
+#invoices {
+  min-height: 100vh;
+  padding-top: 8%; }
+  #invoices .inner {
+    background-color: #FAFAFA;
+    position: relative;
+    z-index: 10;
+    padding-bottom: 40px; }
+  #invoices .note-right {
+    -webkit-box-shadow: 0 0 0 0;
+            box-shadow: 0 0 0 0;
+    background-color: transparent; }
+    #invoices .note-right .bottom {
+      padding: 0; }
+      #invoices .note-right .bottom li {
+        padding: 14px 10%; }
+  #invoices .invoice-all {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px 0; }
+  #invoices .checkbox {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    margin-left: 4px; }
+  #invoices .styled-checkbox + label:before {
+    border-color: #E46E47; }
+  @media screen and (max-width: 1440px) {
+    #invoices .note-right .bottom li {
+      padding: 6px 4%; } }
+  @media screen and (min-width: 992px) {
+    #invoices .note-right .invoice-list {
+      -webkit-transition: background 0.25s ease-in-out;
+      transition: background 0.25s ease-in-out; }
+      #invoices .note-right .invoice-list:hover {
+        background-color: rgba(204, 204, 204, 0.2); } }
+  @media screen and (min-width: 480px) {
+    #invoices .girl-money, #invoices .graphic-money, #invoices .boy-draw {
+      display: none; } }
+  @media screen and (max-width: 600px) {
+    #invoices {
+      min-height: auto;
+      padding-top: 0; }
+      #invoices .note-right .bottom li {
+        padding: 10px 20px; }
+      #invoices .main-bg .boy-draw {
+        bottom: -35vh; } }
+
+.invoice-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px dotted #C9C9C9; }
+  .invoice-list:nth-child(2) {
+    border-top: 1px dotted #C9C9C9; }
+
+.invoice-info {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: calc(100% - 50px); }
+
+.invoice-detail {
+  width: 85%; }
+  .invoice-detail .invoice_id {
+    font-size: 16px;
+    color: #BEBEBE; }
+  .invoice-detail .invoice_name {
+    font-weight: 400;
+    font-size: 18px;
+    color: #222222; }
+
+.invioce_price {
+  width: 100px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #E23E3E;
+  text-align: right;
+  padding: 0 10px; }
+
+.invoice-paper {
+  background-color: #fff;
+  border-radius: 10px 10px 0 0; }
+  .invoice-paper .list-toggle {
+    margin: 0;
+    padding: 10px 24px; }
+    .invoice-paper .list-toggle::after {
+      display: none; }
+  .invoice-paper .income_list_price .price {
+    margin-right: 0; }
+  .invoice-paper .list-info li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px 24px !important; }
+    .invoice-paper .list-info li .price {
+      font-size: 15px;
+      color: #808080;
+      margin-right: 0; }
+    .invoice-paper .list-info li .name {
+      font-size: 15px;
+      color: #808080; }
+  .invoice-paper .income_list {
+    background-color: #F5F5F5; }
+  .invoice-paper .income_list_label .icon_none {
+    display: inline-block;
+    width: 30px;
+    height: 20px; }
+  .invoice-paper .income_list_label .icon {
+    font-size: 24px;
+    line-height: 0;
+    margin-right: 4px; }
+    .invoice-paper .income_list_label .icon i::before {
+      margin-left: -2px; }
+  .invoice-paper .income_list_label .name {
+    color: #63342C; }
+
+.invoice-paper_head {
+  padding: 20px 20px 14px;
+  font-size: 16px;
+  border-bottom: 4px solid #DEDEDE; }
+  .invoice-paper_head .btn {
+    -webkit-box-shadow: 0 0 0 0;
+            box-shadow: 0 0 0 0;
+    padding: 2px 10px;
+    font-size: 16px; }
+  .invoice-paper_head .top, .invoice-paper_head .mid, .invoice-paper_head .btm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .invoice-paper_head .top {
+    margin-bottom: 14px; }
+    .invoice-paper_head .top .title {
+      font-size: 16px;
+      font-weight: 400;
+      color: #606060; }
+    .invoice-paper_head .top .btn {
+      border: 1px solid #63342C; }
+  .invoice-paper_head .mid {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .invoice-paper_head .mid .date {
+      font-size: 18px;
+      font-weight: 500;
+      color: #E46E47; }
+    .invoice-paper_head .mid .time {
+      font-size: 16px;
+      font-weight: 300;
+      color: #CCCCCC; }
+    .invoice-paper_head .mid .invoice_id {
+      font-size: 18px;
+      font-weight: 500;
+      color: #63342C;
+      margin-top: 10px; }
+  .invoice-paper_head .btm {
+    margin-top: 14px; }
+    .invoice-paper_head .btm .btn {
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+      margin: 0 6px; }
+      .invoice-paper_head .btm .btn:first-child {
+        margin-left: 0; }
+      .invoice-paper_head .btm .btn:last-child {
+        margin-right: 0; }
+
+.invoice_paper_total {
+  padding: 10px 24px;
+  text-align: right;
+  background-color: #fff; }

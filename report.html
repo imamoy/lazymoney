@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="utf-8">
+    <title>樹懶愛記帳</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="icon" type="image/x-icon" href="styles/images/web-icon.ico">
+    <link rel="stylesheet" type="text/css" href="styles/fonts/css/fontello.css">
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Noto+Sans+TC:300,400,500,700,900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/plugins/animate.css">
+    <link rel="stylesheet" type="text/css" href="styles/common.css">
+    <link rel="stylesheet" type="text/css" href="styles/page.css">
+  </head>
+  <body>
+    <header class="wow fadeInDown">
+      <div class="container_full">
+        <div class="logo"><a href="index.html"><em class="hidden"> </em></a></div>
+        <div class="menu-toggle">
+          <div class="hamburger"></div>
+        </div>
+        <div class="menu">
+          <ul class="nav">
+                        <li><a class="animsition-link" href="invoices.html" title="name" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="2000">我的發票</a></li>
+                        <li><a class="animsition-link" href="" title="name" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="2000">加值功能</a></li>
+                        <li><a class="animsition-link" href="" title="name" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="2000">記帳教學</a></li>
+                        <li><a class="animsition-link" href="" title="name" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="2000">功能設定</a></li>
+            <li><a class="btn bg-gradient" href="login.html">會員登入</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main class="pageFill" id="money-note">
+      <h1 class="hidden">樹懶愛記帳</h1>
+      <div class="note-inner flex-row">
+        <div class="note-left left wow fadeInLeft">
+          <div class="note-nav">
+            <ul class="nostyle" id="account-nav">
+              <li><a href="outlay.html" title="支出"> 
+                  <div class="icon"><img src="styles/images/price.svg" alt="支出"></div><span class="name">支出</span></a></li>
+              <li><a href="income.html" title="收入"> 
+                  <div class="icon"><img src="styles/images/moneypig.svg" alt="支出"></div><span class="name">收入</span></a></li>
+              <li class="active"><a href="report.html" title="報表"> 
+                  <div class="icon"><img src="styles/images/chart.svg" alt="支出"></div><span class="name">報表</span></a></li>
+            </ul>
+          </div>
+          <div class="paper">
+            <div class="month-total_box">
+              <div class="date-slide"><span class="date-slide_icon icon-angle-left"></span>
+                <div class="date-btn btn">2019 年 7月</div><span class="date-slide_icon icon-angle-right"></span>
+              </div>
+            </div>
+            <canvas id="myChart"></canvas>
+          </div>
+        </div>
+        <div class="note-right right wow fadeInRight">
+          <div class="top"><b class="title">統計明細</b></div>
+          <div class="bottom">
+            <ul class="statistics_list nostyle">
+                            <li>
+                              <div class="report_list list-toggle">
+                                <div class="reprot_list_label">2018年 5月</div>
+                              </div>
+                              <div class="income_info list-info">
+                                <ul class="nostyle">
+                                  <li><b class="income_info_label">收入</b><b class="calculator_num calculator_income">$ 30,000</b></li>
+                                  <li>
+                                    <div class="income_info_label">支出</div><b class="calculator_num calculator_pay">$ 2,432</b>
+                                  </li>
+                                  <li>
+                                    <div class="income_info_label">結餘</div><b class="calculator_num">$ 27,668</b>
+                                  </li>
+                                  <li>
+                                    <div class="income_info_label">總資產</div><b class="calculator_num">$ 100,000</b>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="report_list list-toggle">
+                                <div class="reprot_list_label">2018年 4月</div>
+                              </div>
+                              <div class="income_info list-info">
+                                <ul class="nostyle">
+                                  <li><b class="income_info_label">收入</b><b class="calculator_num calculator_income">$ 30,000</b></li>
+                                  <li>
+                                    <div class="income_info_label">支出</div><b class="calculator_num calculator_pay">$ 2,432</b>
+                                  </li>
+                                  <li>
+                                    <div class="income_info_label">結餘</div><b class="calculator_num">$ 27,668</b>
+                                  </li>
+                                  <li>
+                                    <div class="income_info_label">總資產</div><b class="calculator_num">$ 100,000</b>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="report_list list-toggle">
+                                <div class="reprot_list_label">2018年 3月</div>
+                              </div>
+                              <div class="income_info list-info">
+                                <ul class="nostyle">
+                                  <li><b class="income_info_label">收入</b><b class="calculator_num calculator_income">$ 30,000</b></li>
+                                  <li>
+                                    <div class="income_info_label">支出</div><b class="calculator_num calculator_pay">$ 2,432</b>
+                                  </li>
+                                  <li>
+                                    <div class="income_info_label">結餘</div><b class="calculator_num">$ 27,668</b>
+                                  </li>
+                                  <li>
+                                    <div class="income_info_label">總資產</div><b class="calculator_num">$ 100,000</b>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="report_list list-toggle">
+                                <div class="reprot_list_label">2018年 2月</div>
+                              </div>
+                              <div class="income_info list-info">
+                                <ul class="nostyle">
+                                  <li><b class="income_info_label">收入</b><b class="calculator_num calculator_income">$ 30,000</b></li>
+                                  <li>
+                                    <div class="income_info_label">支出</div><b class="calculator_num calculator_pay">$ 2,432</b>
+                                  </li>
+                                  <li>
+                                    <div class="income_info_label">結餘</div><b class="calculator_num">$ 27,668</b>
+                                  </li>
+                                  <li>
+                                    <div class="income_info_label">總資產</div><b class="calculator_num">$ 100,000</b>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="report_list list-toggle">
+                                <div class="reprot_list_label">2018年 1月</div>
+                              </div>
+                              <div class="income_info list-info">
+                                <ul class="nostyle">
+                                  <li><b class="income_info_label">收入</b><b class="calculator_num calculator_income">$ 30,000</b></li>
+                                  <li>
+                                    <div class="income_info_label">支出</div><b class="calculator_num calculator_pay">$ 2,432</b>
+                                  </li>
+                                  <li>
+                                    <div class="income_info_label">結餘</div><b class="calculator_num">$ 27,668</b>
+                                  </li>
+                                  <li>
+                                    <div class="income_info_label">總資產</div><b class="calculator_num">$ 100,000</b>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="boy_hug wow fadeInRight"><img src="styles/images/boy_hagmoney.svg" alt=""></div>
+      <div class="girl_lie wow fadeInUp"><img src="styles/images/girl_lie.svg" alt=""></div>
+      <div class="graphic-money wow fadeInUp"><img src="styles/images/g-money.svg" alt=""></div>
+    </main>
+    <footer id="footer">
+      <div class="container_full">
+        <ul class="nostyle footer-nav">
+          <li><a href="about.html">關於我們</a></li>
+          <li><a href="contact.html">聯絡我們</a></li>
+          <li><a href="terms.html">服務條款</a></li>
+        </ul>
+        <div class="copyright">©2019 樹懶愛記帳. <br>All rights reserved</div>
+      </div>
+    </footer>
+    <div class="cursor"></div>
+    <script src="scripts/default/jquery.min.js"></script>
+    <script src="scripts/plugins/chart.js"></script>
+    <script src="scripts/default/mychart.js"></script>
+    <script src="scripts/plugins/wow.js"></script>
+    <script src="scripts/default/ui.js"></script>
+  </body>
+</html>

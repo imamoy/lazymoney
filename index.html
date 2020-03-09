@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="utf-8">
+    <title>樹懶愛記帳</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="icon" type="image/x-icon" href="styles/images/web-icon.ico">
+    <link rel="stylesheet" type="text/css" href="styles/fonts/css/fontello.css">
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Noto+Sans+TC:300,400,500,700,900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/plugins/animate.css">
+    <link rel="stylesheet" type="text/css" href="styles/common.css">
+    <link rel="stylesheet" type="text/css" href="styles/plugins/datepicker.css">
+    <link rel="stylesheet" type="text/css" href="styles/index.css">
+  </head>
+  <body>
+    <header class="wow fadeInDown">
+      <div class="container_full">
+        <div class="logo"><a href="index.html"><em class="hidden"> </em></a></div>
+        <div class="menu-toggle">
+          <div class="hamburger"></div>
+        </div>
+        <div class="menu">
+          <ul class="nav">
+                        <li><a class="animsition-link" href="invoices.html" title="name" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="2000">我的發票</a></li>
+                        <li><a class="animsition-link" href="" title="name" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="2000">加值功能</a></li>
+                        <li><a class="animsition-link" href="" title="name" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="2000">記帳教學</a></li>
+                        <li><a class="animsition-link" href="" title="name" data-animsition-out-class="overlay-slide-out-top" data-animsition-out-duration="2000">功能設定</a></li>
+            <li><a class="btn bg-gradient" href="login.html">會員登入</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main class="pageFill" id="home">
+      <h1 class="hidden">樹懶愛記帳</h1>
+      <div class="home-inner container flex-row">
+        <div class="left">
+          <ul class="nostyle" id="account-nav">
+            <li><a href="outlay.html" title="支出"> 
+                <div class="icon"><img src="styles/images/price.svg" alt="支出"></div><span class="name">支出</span></a></li>
+            <li><a href="income.html" title="收入"> 
+                <div class="icon"><img src="styles/images/moneypig.svg" alt="支出"></div><span class="name">收入</span></a></li>
+            <li><a href="" title="報表"> 
+                <div class="icon"><img src="styles/images/chart.svg" alt="支出"></div><span class="name">報表</span></a></li>
+          </ul>
+          <div class="month-total_box wow fadeIn">
+            <div class="date-slide"><span class="date-slide_icon icon-angle-left"></span>
+              <div class="date-btn btn">2019 年 7月</div><span class="date-slide_icon icon-angle-right"></span>
+            </div>
+            <div class="progressBar">
+              <div class="progressBar_value" style="width:20%;"> </div>
+            </div>
+            <table class="month-total">
+              <tr>
+                <td>
+                  <div class="month-col">
+                    <div class="label">支出</div><b class="calculator_num calculator_income">$2,432</b>
+                  </div>
+                </td>
+                <td>
+                  <div class="month-col">
+                    <div class="label">支出</div><b class="calculator_num calculator_pay">$ 30,000</b>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <div class="month-col">
+                    <div class="label">支出</div><b class="calculator_num">$ 27,668</b>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <div class="month-col">
+                    <div class="label">總淨值</div><b class="calculator_num">$ 27,668</b>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="right">
+          <div class="calculator wow bounce">
+            <div class="calculator_screen">
+              <div class="top"><em class="title">今日收入</em><span class="calculator_num calculator_income">+ $ 8,000</span></div>
+              <div class="btm"><em class="title">支出</em><span class="calculator_num calculator_pay">- $ 300</span></div>
+            </div>
+            <form action="">
+              <div class="calculator_center">
+                <div class="calculator_label">
+                  <div class="switch_box">
+                    <div class="switch_label"><span class="phonehide">新增</span>支出</div>
+                    <div class="switch_toggle">
+                      <input id="switch" type="checkbox">
+                      <label for="switch">Toggle</label>
+                    </div>
+                    <div class="switch_label"><span class="phonehide">新增</span>收入</div>
+                  </div>
+                  <div class="date_box"><span class="prev-day arrow icon-angle-left"></span>
+                    <div class="input-date"></div><span class="next-day arrow icon-angle-right"></span>
+                  </div>
+                </div>
+                <div class="calculator_count">
+                  <div class="calculator_box">
+                    <div class="calculator_price">
+                      <input class="btn" id="showResBox" type="text" placeholder="輸入金額">
+                    </div>
+                    <div class="calculator_btnbox">
+                      <div class="calculator_btn_num">
+                        <input class="btn btn-w" type="button" value="1" onClick="getNum('1')">
+                        <input class="btn btn-w" type="button" value="2" onClick="getNum('2')">
+                        <input class="btn btn-w" type="button" value="3" onClick="getNum('3')">
+                        <input class="btn btn-w" type="button" value="4" onClick="getNum('4')">
+                        <input class="btn btn-w" type="button" value="5" onClick="getNum('5')">
+                        <input class="btn btn-w" type="button" value="6" onClick="getNum('6')">
+                        <input class="btn btn-w" type="button" value="7" onClick="getNum('7')">
+                        <input class="btn btn-w" type="button" value="8" onClick="getNum('8')">
+                        <input class="btn btn-w" type="button" value="9" onClick="getNum('9')">
+                        <input class="btn btn-w" type="button" value="." onClick="cal('.')">
+                        <input class="btn btn-w" type="button" value="0" onClick="getNum('0')"><span class="btn btn-gary" type="button" value="" onClick="del()"><i class="icon-delect"></i></span>
+                      </div>
+                      <div class="calculator_btn_math">
+                        <input class="btn btn-y" type="button" value="+" onClick="cal('+')">
+                        <input class="btn btn-y" type="button" value="-" onClick="minus('-')">
+                        <input class="btn btn-y" type="button" value="×" onClick="cal('*')">
+                        <input class="btn btn-y" type="button" value="÷" onClick="cal('/')">
+                        <input class="btn btn-y" type="button" value="=" onClick="equal()">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="calculator_note">
+                    <div class="calculator_sort">
+                      <input class="btn btn-y_lg" type="button" value="飲食">
+                      <input class="btn btn-y_lg" type="button" value="日常">
+                      <input class="btn btn-y_lg" type="button" value="交通">
+                      <input class="btn btn-y_lg" type="button" value="娛樂">
+                      <input class="btn btn-y_lg" type="button" value="醫療">
+                      <input class="btn btn-y_lg" type="button" value="發票">
+                      <input class="btn btn-y_lg" type="button" value="自訂1">
+                      <input class="btn btn-y_lg" type="button" value="自訂2">
+                      <input class="btn btn-y_lg" type="button" value="自訂3">
+                      <input class="btn btn-y_lg" type="button" value="自訂4">
+                      <input class="btn btn-y_lg" type="button" value="自訂5">
+                      <input class="btn btn-y_lg" type="button" value="自訂6">
+                    </div>
+                    <div class="calculator_sort_mobile">
+                      <div class="select">
+                        <select>
+                          <option value="飲食">飲食</option>
+                          <option value="日常">日常</option>
+                          <option value="交通">交通</option>
+                          <option value="娛樂">娛樂</option>
+                          <option value="醫療">醫療</option>
+                          <option value="發票">發票</option>
+                          <option value="自訂1">自訂1</option>
+                          <option value="自訂2">自訂2</option>
+                          <option value="自訂3">自訂3</option>
+                          <option value="自訂4">自訂4</option>
+                          <option value="自訂5">自訂5</option>
+                          <option value="自訂6">自訂6</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="calculator_remark">
+                      <input class="input-border" type="text" placeholder="輸入備註">
+                      <input class="btn btn-green noshadow" type="button" value="添加">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="boy-draw wow fadeInRight"><img src="styles/images/boy_draw.svg" alt="">
+        <div class="hand"><img src="styles/images/boy_draw_hand.svg" alt=""></div>
+      </div>
+      <div class="girl-money wow fadeInUp"><img src="styles/images/girl-money.svg" alt=""></div>
+      <div class="graphic-money"><img src="styles/images/g-money.svg" alt=""></div>
+    </main>
+    <footer id="footer">
+      <div class="container_full">
+        <ul class="nostyle footer-nav">
+          <li><a href="about.html">關於我們</a></li>
+          <li><a href="contact.html">聯絡我們</a></li>
+          <li><a href="terms.html">服務條款</a></li>
+        </ul>
+        <div class="copyright">©2019 樹懶愛記帳. <br>All rights reserved</div>
+      </div>
+    </footer>
+    <div class="cursor"></div>
+    <script src="scripts/default/jquery.min.js"></script>
+    <script src="scripts/plugins/datepicker.js"></script>
+    <script src="scripts/default/calculator.js"></script>
+    <script src="scripts/plugins/wow.js"></script>
+    <script src="scripts/default/ui.js"></script>
+  </body>
+</html>
